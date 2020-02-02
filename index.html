@@ -10,7 +10,7 @@
   <title>Friends And Family Assignment</title>
 </head>
 
-<body>
+<body class="bg-secondary">
   <div class="container">
     <div class="row my-4">
       <div class="col-md-12 d-flex justify-content-center">
@@ -20,7 +20,7 @@
     <div class="row m-4">
       <div class="col-md-12 d-flex justify-content-center my-3">How to Search</div>
       <div class="col-md-3">
-        <div class="central">Search by Relationship:
+        <div class="central ">Search by Relationship:
           <select id='relationSel' onchange="drpJSON()">
             <option value='0'>--</option>
             <option value="Brother">Brother</option>"
@@ -32,23 +32,24 @@
         </div>
       </div>
       <div class="col-md-3">
-        Search by Name: <input type="text" name="RelationName" id="RelationName" onkeyup="wrtJSON()">
+        <p>Search by Name: <input type="text" name="RelationName" id="RelationName" onkeyup="wrtJSON()"></p>
         <!-- <input type="button" onclick="wrtJSON()" value="Pick"> -->
       </div>
       <div class="col-md-3">
-        Search by Name & Relation: <input type="text" name="nameAndRelation" id="nameAndRelation" onkeyup="bothJSON()">
+        <p>Search by Name & Relation: <input type="text" name="nameAndRelation" id="nameAndRelation"
+            onkeyup="bothJSON()"></p>
       </div>
-      <div class="col-md-3">
-        <button onclick="allJSON()">ALL</button>
+      <div class="col-md-3 d-flex justify-content-center">
+        <button type="button" class="btn btn-danger btn-lg btn-block" onclick="allJSON()">ALL</button>
       </div>
     </div>
     <div class="row my-5">
       <div class="col-md-6">
-        <h3 class="d-flex justify-content-center">NAME</h3>
+        <h3 class="d-flex justify-content-center"><u>NAME</u></h3>
         <div class="d-flex justify-content-center" id="Name">None Selected</div>
       </div>
       <div class="col-md-6">
-        <h3 class="d-flex justify-content-center">Relation</h3>
+        <h3 class="d-flex justify-content-center"><u>Relation</u></h3>
         <div class="d-flex justify-content-center" id="Relation">None Selected</div>
       </div>
     </div>
