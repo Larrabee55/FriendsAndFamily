@@ -117,7 +117,10 @@
   <h1>Book Details</h1>
   <div class="central">Relationship:
     <select id='BookSel' onchange="drpJSON()">
-
+      <option value="Brother">Brother</option>"
+      <option value="Father">Father</option>"
+      <option value="Mother">Mother</option>"
+      <option value="Friend">Friend</option>"
     </select>
     Or Enter Name: <input type="text" name="AuthorName" id="AuthorName" onkeyup="wrtJSON()">
     <input type="button" onclick="wrtJSON()" value="Pick">
@@ -125,8 +128,8 @@
   <br>
   <table class="src">
     <tr>
-      <th>Title</th>
-      <th>Author</th>
+      <th>Name</th>
+      <th>Relation</th>
     </tr>
     <tr>
       <td>
@@ -172,6 +175,7 @@
         var text = "<option value='0'>--</option>";
         for (var i = 0; i < jsonObj.people.length; i++) {
           text = text + "<option value = '" + jsonObj.people[i].relation + "'> " + jsonObj.people[i].relation + "</option>";
+
         }
         document.getElementById("BookSel").innerHTML = text;
       }
