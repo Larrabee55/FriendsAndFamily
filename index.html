@@ -97,7 +97,7 @@
 
               var selection = i;
             }
-            if (jsonObj.people[i].lname.indexOf(document.getElementById("RelationName").value) > -1 && document.getElementById("RelationName").value != "") {
+            else (jsonObj.people[i].lname.indexOf(document.getElementById("RelationName").value) > -1 && document.getElementById("RelationName").value != "") {
               Name = Name + jsonObj.people[i].name + " " + jsonObj.people[i].lname + "<br>";
               Relation = Relation + jsonObj.people[i].relation + "<br>";
 
