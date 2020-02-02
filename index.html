@@ -91,7 +91,7 @@
 
           for (var i = 0; i < jsonObj.people.length; i++) {
             console.log(i)
-            if (jsonObj.people[i].Relation.indexOf(document.getElementById("RelationName").value) > -1 && document.getElementById("RelationName").value != "") {
+            if (jsonObj.people[i].lname.indexOf(document.getElementById("RelationName").value) > -1 && document.getElementById("RelationName").value != "") {
               Name = Name + jsonObj.people[i].name + " " + jsonObj.people[i].lname + "<br>";
               Relation = Relation + jsonObj.people[i].relation + "<br>";
 
