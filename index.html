@@ -111,20 +111,49 @@
 </head>
 
 <body>
-  <h1>Friends and Family</h1>
-  <div class="central">Relationship:
-    <select id='relationSel' onchange="drpJSON()">
-      <option value='0'>--</option>
-      <option value="Brother">Brother</option>"
-      <option value="Father">Father</option>"
-      <option value="Mother">Mother</option>"
-      <option value="Friend">Friend</option>"
-      <option value="Girlfriend">Girlfriend</option>"
-    </select>
-    Or Enter Name: <input type="text" name="RelationName" id="RelationName" onkeyup="wrtJSON()">
-    <input type="button" onclick="wrtJSON()" value="Pick">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Friends and Family</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="central">Relationship:
+          <select id='relationSel' onchange="drpJSON()">
+            <option value='0'>--</option>
+            <option value="Brother">Brother</option>"
+            <option value="Father">Father</option>"
+            <option value="Mother">Mother</option>"
+            <option value="Friend">Friend</option>"
+            <option value="Girlfriend">Girlfriend</option>"
+          </select>
+        </div>
+      </div>
+      <div class="col-md-3">
+        Or Enter Name: <input type="text" name="RelationName" id="RelationName" onkeyup="wrtJSON()">
+        <input type="button" onclick="wrtJSON()" value="Pick">
+      </div>
+      <div class="col-md-3">
+
+      </div>
+      <div class="col-md-3">
+
+      </div>
+    </div>
+    <div class="row ">
+      <div class="col-md-6 d-flex justify-content-center">
+        <h3>NAME</h3>
+        <div id="Name">None Selected</div>
+      </div>
+      <div class="col-md-6">
+        <h3>Relation</h3>
+        <div id="Relation">None Selected</div>
+      </div>
+    </div>
   </div>
-  <br>
+
+  <!-- <br>
   <table class="src">
     <tr>
       <th>Name</th>
@@ -138,7 +167,7 @@
         <div id="Relation">None Selected</div>
       </td>
     </tr>
-  </table>
+  </table> -->
 
   <!-- <script>
     var data_file = "FriendsAndFamily.json";
